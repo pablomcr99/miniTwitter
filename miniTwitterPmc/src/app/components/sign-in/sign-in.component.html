@@ -1,0 +1,35 @@
+<div class="register">
+    <form class="custom-form" method="post">
+      <h1>Registro</h1>
+      <input
+        type="text"
+        [(ngModel)]="nuevoUsuario.username"
+        name="username"
+        placeholder="username"
+        required="required"
+      />
+      <input
+        type="email"
+        [(ngModel)]="nuevoUsuario.email"
+        name="email"
+        placeholder="Email"
+        required="required"
+      />
+      <input
+        type="password"
+        [(ngModel)]="nuevoUsuario.password"
+        name="password"
+        placeholder="Contraseña"
+        required="required"
+      />
+      <input
+        type="text"
+        [(ngModel)]="nuevoUsuario.code"
+        name="code"
+        placeholder="Introduce tu codigo."
+        required="required"
+      />
+      <button type="submit" (click)="registro()">Register</button>
+      <button (click)="irLogin()">Volver al LogIn</button>
+    </form>
+  </div>

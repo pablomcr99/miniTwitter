@@ -1,0 +1,21 @@
+<div class="login">
+    <form class="custom-form" method="post">
+      <h1>Login</h1>
+      <input
+        type="email"
+        [(ngModel)]="usuario.email"
+        name="email"
+        placeholder="Email"
+        required="required"
+      />
+      <input
+        type="password"
+        [(ngModel)]="usuario.password"
+        name="password"
+        placeholder="Password"
+        required="required"
+      />
+      <button type="submit" (click)="login()">Inicio</button>
+      <button (click)="irRegistro()">Si no tienes cuenta Registrate</button>
+    </form>
+  </div>
