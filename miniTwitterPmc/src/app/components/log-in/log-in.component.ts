@@ -22,12 +22,12 @@ export class LogInComponent implements OnInit {
   login(){
     this.authService.login(this.usuario).subscribe(data =>{
       localStorage.setItem('usuarioActual',JSON.stringify({'token':data.token}))
-      this.router.navigate(["/index"]);
+      this.router.navigate(["/inicio"]);
     });
   }
 
   irRegistro(){
-    this.router.navigate(["/registro"]);
+    this.router.navigate(["/register"]);
   }
 
   

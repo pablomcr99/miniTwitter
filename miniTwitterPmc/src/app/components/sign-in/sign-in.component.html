@@ -1,35 +1,51 @@
-<div class="register">
+<div class="container login">
     <form class="custom-form" method="post">
       <h1>Registro</h1>
-      <input
-        type="text"
-        [(ngModel)]="nuevoUsuario.username"
-        name="username"
-        placeholder="username"
-        required="required"
-      />
-      <input
-        type="email"
-        [(ngModel)]="nuevoUsuario.email"
-        name="email"
-        placeholder="Email"
-        required="required"
-      />
-      <input
-        type="password"
-        [(ngModel)]="nuevoUsuario.password"
-        name="password"
-        placeholder="Contraseña"
-        required="required"
-      />
-      <input
-        type="text"
-        [(ngModel)]="nuevoUsuario.code"
-        name="code"
-        placeholder="Introduce tu codigo."
-        required="required"
-      />
-      <button type="submit" (click)="registro()">Register</button>
+      <div class="control-group form-group">
+        <div class="controls">
+          <input
+            type="text"
+            [(ngModel)]="nuevoUsuario.username"
+            name="username"
+            placeholder="username"
+            required="required"
+          />
+        </div>
+      </div>
+      <div class="control-group form-group">
+        <div class="controls">
+          <input
+            type="email"
+            [(ngModel)]="nuevoUsuario.email"
+            name="email"
+            placeholder="Email"
+            required="required"
+          />
+        </div>
+      </div>
+      <div class="control-group form-group">
+        <div class="controls">
+          <input
+            type="password"
+            [(ngModel)]="nuevoUsuario.password"
+            name="password"
+            placeholder="Contraseña"
+            required="required"
+          />
+        </div>
+      </div>
+      <div class="control-group form-group">
+        <div class="controls">
+          <input
+            type="text"
+            [(ngModel)]="nuevoUsuario.code"
+            name="code"
+            placeholder="Introduce tu codigo."
+            required="required"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary boton" (click)="registro();">Registro</button>
       <button (click)="irLogin()">Volver al LogIn</button>
     </form>
   </div>

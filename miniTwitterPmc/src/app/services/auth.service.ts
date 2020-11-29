@@ -8,11 +8,12 @@ import {SigninResponse} from '../dto/signin-response';
 
 const loginUrl = 'https://www.minitwitter.com:3001/apiv1/auth/login';
 
-const signUpUrl = 'https://www.minitwitter.com:3001/apiv1/auth/signup';
+const signUpUrl ='https://www.minitwitter.com:3001/apiv1/auth/signup';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type':  'application/json'
+    'Content-Type':  'application/json',
+    'Authorization': 'Bearer ' + localStorage.getItem('token')
   })
 };
 

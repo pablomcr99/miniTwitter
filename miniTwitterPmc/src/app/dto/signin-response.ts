@@ -1,9 +1,9 @@
 export interface SigninResponse {
-    token: string;
-    username: string;
-    email: string;
-    role:string;
-    photoUrl: string;
-    created: Date;
-    active: boolean;
+    token:string;
+    username:string;
+    email:string;
+    role: string,
+    photoUrl: string,
+    created: Date,
+    active: boolean,
 }

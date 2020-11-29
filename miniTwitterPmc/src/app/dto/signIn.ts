@@ -7,6 +7,6 @@ export class SignUp{
         this.username = username;
         this.email = email;
         this.password = password;
-        this.code= "UDEMYANDROID";
+        this.code= 'UDEMYANDROID';
     }
 }

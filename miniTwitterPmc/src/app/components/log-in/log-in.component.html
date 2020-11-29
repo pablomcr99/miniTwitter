@@ -1,21 +1,33 @@
-<div class="login">
+<div class="container login">
     <form class="custom-form" method="post">
-      <h1>Login</h1>
-      <input
-        type="email"
-        [(ngModel)]="usuario.email"
-        name="email"
-        placeholder="Email"
-        required="required"
-      />
-      <input
-        type="password"
-        [(ngModel)]="usuario.password"
-        name="password"
-        placeholder="Password"
-        required="required"
-      />
-      <button type="submit" (click)="login()">Inicio</button>
-      <button (click)="irRegistro()">Si no tienes cuenta Registrate</button>
+      <h1>MiniTwitter</h1>
+      <div class="control-group form-group">
+        <div class="controls">
+            <input
+                type="email"
+                [(ngModel)]="usuario.email"
+                name="email"
+                placeholder="Email"
+                required="required"/>
+        </div>
+      </div>
+      <div class="control-group form-group">
+        <div class="controls">
+            <input
+                type="password"
+                [(ngModel)]="usuario.password"
+                name="password"
+                placeholder="Password"
+                required="required"
+            />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary boton" (click)="login()">Inicio</button>
+      <a (click)="irRegistro()" >Si no tienes cuenta Registrate</a>
     </form>
   </div>
+
+
+
+
+  

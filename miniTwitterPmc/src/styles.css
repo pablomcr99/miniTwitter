@@ -1,1 +1,291 @@
 /* You can add global styles to this file, and also import other style files */
+
+header{
+	margin-top:32px;
+	position:relative;
+}
+
+ a img{
+	width:135px;
+	height:35px;
+}
+
+.fondo{
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  margin-left:17%;
+	margin-top:5%;
+  margin-bottom:10%;
+	width:80%;
+}
+
+
+
+ a img{
+
+}
+
+ body{
+   background-color:rgb(21, 32, 43);
+}
+
+
+ .transparente{
+ border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  background-color: rgba(20, 20, 20, 0.9);
+  color:black;
+  margin-top:60px;
+  width:40%;
+  height:40%;
+
+}
+
+ .formulario{
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  background-color: rgba(230, 230, 230,0.9 );
+  color:black;
+  margin-top:5%;
+  margin-bottom:10%;
+  width:60%;
+  height:30%;
+  justify-content:flex;
+  border-radius: 15px;
+
+}
+.informacion{
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  background-color: rgba(230, 230, 230,1);
+  color:black;
+  margin-top:5%;
+  margin-bottom:10%;
+  width:50%;
+  height:20%;
+
+  border-radius: 15px;
+
+}
+
+.informacion h3,h4{
+    color:red;
+}
+
+.informacion div{
+    justify-content:flex;
+    position:flex;
+}
+
+.inf{
+    color:black;
+}
+
+   #imagen img{
+	margin-right:0px;
+	justify-content:right;
+	width:332px;
+	heigth:100%;
+}
+
+ .formulario label{
+ 	font-family:arial;
+ 	color:yellow;
+ }
+
+	input[type=text],input[type=password],input[type=number],input[type=email]{
+
+	 border: 1px dotted #999;
+     border-radius: 10px;
+	}
+
+  .transparente2{
+  background-color: rgba(40, 40, 40, 0.9);
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  margin-top:60px;
+  font-size:25px;
+
+}
+
+
+
+
+
+.login{
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+
+}
+
+.login label,legend,p{
+    color:#E51C24;
+    font-weight:bolder;
+}
+
+.login img{
+    width:150px;
+    height:60px;
+}
+
+.textofooter{
+    color:white;
+}
+.boton{
+    background-color:#00acee;
+    border-color:#00acee;
+    
+}
+.boton:hover{
+    background-color:#5B5A5A;
+}
+#final{
+  margin-top:5%;
+  margin-bottom:10%;
+}
+
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+
+nav{
+	background-color: #00acee;
+    color:white;
+	z-index:10000;
+}
+
+nav li>ul{
+      display:none;
+      }
+
+nav li:hover ul{
+      display:block;
+      position:absolute;
+      text-align:center;
+
+      background-color: rgb(0,172,238);
+      text-decoration:none;
+      color:white;
+
+
+
+}
+
+nav li:hover>ul>li{
+	border: 1px solid #E1E1E1;
+}
+nav li>ul li:hover{
+	background-color: rgb(230,230,230);
+	color:black;
+	z-index:10000;
+}
+
+ul{
+	text-decoration:none;
+	list-style:none;
+}
+
+
+#pie div img{
+	width:220px;
+	height:80px;
+}
+
+footer a{
+	color:blue;
+}
+
+
+form{
+	margin-left: 4px;
+}
+
+form fieldset{
+
+}
+
+
+
+
+#add{
+	margin-top:25px;
+}
+
+table {
+	margin-top:5%;
+  margin-bottom:10%;
+
+
+}
+
+table tbody tr td img{
+	width:20px;
+	height:15px;
+}
+
+table thead th img{
+    width:20px;
+	height:15px;
+}
+
+thead th{
+	background-color: #5B5A5A;
+	color:white;
+}
+tbody tr:nth-child(odd) {
+    background-color: rgb(240, 238, 238);
+}
+
+
+
+
+.row-side{
+  background-color: grey;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(30,30,30);
+    border-right: 1px solid rgb(30,30,30);
+    height: 100%;
+    color:white;
+    width:10%;
+
+
+  }
+
+}
+
+
+
+ .sidebar ul li:hover{
+ 	background-color: #FFC107;
+
+ }
+
+
+    a,
+    a:hover,
+    a:focus {
+      color: inherit;
+      text-decoration: none;
+
+    }
+

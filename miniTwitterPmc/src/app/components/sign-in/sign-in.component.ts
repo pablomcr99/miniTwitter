@@ -15,11 +15,13 @@ export class SignInComponent implements OnInit {
   constructor(private authService:AuthService,private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    this.nuevoUsuario=new SignUp("","","");
+    this.nuevoUsuario=new SignUp('','','');
+
   }
 
   registro(){
-    this.authService.registro(this.nuevoUsuario).subscribe(data =>{
+    this.authService.registro(this.nuevoUsuario).subscribe(resp =>{
+      console.log(this.nuevoUsuario);
       this.router.navigate(["/"]);
     });
   }
