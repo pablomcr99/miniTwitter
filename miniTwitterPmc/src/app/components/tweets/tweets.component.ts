@@ -34,6 +34,7 @@ export class TweetsComponent implements OnInit {
     this.likeService.like(id).subscribe(resp=>{
     console.log(resp);
     alert("Has indicado que te gusta el tweet");
+    this.router.navigate(["/inicio"]);
     });
   }
 
