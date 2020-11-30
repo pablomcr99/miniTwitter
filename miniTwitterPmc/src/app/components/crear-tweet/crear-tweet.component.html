@@ -1,1 +1,19 @@
-<p>crear-tweet works!</p>
+
+<div class="container login">
+    <form class="custom-form" method="post">
+      <h1>Nuevo tweet</h1>
+      <div class="control-group form-group">
+        <div class="controls">
+          <input
+            type="text"
+            [(ngModel)]="nuevoTweet.mensaje"
+            name="tweet"
+            placeholder="mensaje..."
+            required="required"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary boton" (click)="crearTweet();">Twittear</button>
+      <button (click)="volvertweets()">Volver a TL</button>
+    </form>
+  </div>

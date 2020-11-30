@@ -12,8 +12,7 @@ const signUpUrl ='https://www.minitwitter.com:3001/apiv1/auth/signup';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type':  'application/json',
-    'Authorization': 'Bearer ' + localStorage.getItem('token')
+    'Content-Type':  'application/json'
   })
 };
 

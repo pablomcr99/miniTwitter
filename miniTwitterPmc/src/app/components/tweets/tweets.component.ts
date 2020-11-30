@@ -37,4 +37,8 @@ export class TweetsComponent implements OnInit {
     });
   }
 
+  irNuevoTweet(){
+    this.router.navigate(["/nuevotweet"]);
+  }
+
 }

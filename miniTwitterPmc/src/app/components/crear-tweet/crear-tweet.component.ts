@@ -12,7 +12,7 @@ export class CrearTweetComponent implements OnInit {
 
   nuevoTweet:createTweet;
 
-  constructor(private AllTweetsService tweetService,private route:ActivatedRoute,private router: Router) { }
+  constructor(private tweetService:AllTweetsService ,private route:ActivatedRoute,private router: Router) { }
 
   ngOnInit(): void {
     this.nuevoTweet=new createTweet("");
@@ -20,8 +20,12 @@ export class CrearTweetComponent implements OnInit {
 
   crearTweet(){
     this.tweetService.crearTweet(this.nuevoTweet).subscribe(resp=>{
-      this.router.navigate(["/inicio"])
+      this.router.navigate(["/inicio"]);
     });
+  }
+
+  volvertweets(){
+    this.router.navigate(["/inicio"]);
   }
 
 }
